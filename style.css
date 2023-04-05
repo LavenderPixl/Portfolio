@@ -1,72 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 };
- 
 body {
     overflow: hidden;
 }
+html{
+    background: url(img/8135.png)no-repeat center center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
 
-.container {
+.container-fluid {
+    min-height: 100%;
+    min-width: 1024px;
+
     width: 100%;
-    min-height: 100vh;
-    background-color: #5A334A;
+    height: auto;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        left: 50%;
+        margin-left: -512px;
+    }
 }
 
 nav{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    height: 80px;
-    line-height: 80px;
+    height: 65px;
+    line-height: 65px;
     z-index: 111;
-    background-color: #E5989B;
+    background-color: #004A67;
 }
-
-.logo{
+.logo{ 
     display: flex;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
-    color: #5A334A;
-    letter-spacing: 3px;
+    color: #F9BFB6;
+    letter-spacing: 2px;
     cursor: pointer;
     text-transform: uppercase;
+    float: left;
+    margin-right: 1000px;
 }
-
-b{ /* Button different size/color? */
-    font-size: 80px;
-    color: #AA5D7C;
+b{ /* DOT. */
+    font-size: 60px;
+    color: #5F99B5;
 }
 
 .navItems{
     display: flex;
+    position: absolute;
 }
-
 .navItems li{
     list-style: none;
     margin: 0 15px;
 }
-
 .navItems li a{
     font-size: 25px;
-    color: #5A334A;
+    color: #5F99B5;
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: capitalize;
+    transition: 0.3s;
 }
-
 .navItems li:hover a,
 .links a:hover{
-    color:#AA5D7C;
+    color:#066F92;
 }
-
 .links a{
+    float: right;
+
     font-size: 30px;
-    color: #5A334A;
-    margin: 25px 10px;
+    color: #5F99B5;
+    transition: 0.3s;
+    margin: 0px 10px;
 }
 
 .wrapper{
@@ -81,15 +98,14 @@ overflow: hidden;
 .wrapper::before{
     position: absolute;
     content: '';
-    height: 600px;
-    width: 600px;
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
     left: -12%;
     top: 40%;
-    background: linear-gradient(45deg, #C5DCA0, #95B8D1);
+    background: linear-gradient(45deg, #5F99B5, #004A67);
     animation: object1 6s linear infinite
 }
-
 .wrapper::after{
     position: absolute;
     content: '';
@@ -112,21 +128,22 @@ overflow: hidden;
         left: 35%;
         top: 10%; 
     }
-}
+} 
 
 .cols{
     width: 50%;
 }
 .cols0{
+    width: 60%;
     z-index: 5;
 }
 
 .topLine{ /* First Line of Descriptor.*/
     display: block;
     position: relative;
-    font-size: 35px;
+    font-size: 40px;
     letter-spacing: 5px;
-    color:#95B8D1 ; 
+    color:#F9BFB6 ; 
 }
 .topLine::after{
     position: absolute;
@@ -134,16 +151,16 @@ overflow: hidden;
     height: 4px;
     width: 45px;
     bottom: 10px;
-    background-color: #95B8D1;
+    background-color: #F9BFB6;
 }
-h1{ /*I'm -*/
+#im{ 
     display: block;
-    font-size: 7em;
-    font-weight: 900;
-    color: white;
+    font-size: 3em;
+    color: #5F99B5;
 }
 .multiText{ /* Describer*/
-    color:white;
+    color:#F9BFB6;
+    font-weight: bold;
     text-transform: capitalize;
 }
 
@@ -151,16 +168,16 @@ p{ /* Small descrip text*/
     display: block;
     width: 90%;
     font-size: 1.2em;
-    color: white;
+    color: #FDEB9E;
 }
 
-.btns{
+/* .btns{
     width: 100%;
     position: relative;
     left: 150px;
-}
+} */
 
-button{
+/* button{
     outline: none;
     border: none;
     cursor: pointer;
@@ -176,9 +193,9 @@ button{
 }
 button:hover{
     background-color: #AA5D7C;
-}
+} */
 
-.imgbox{
+/* .imgbox{
     position: relative;
     width: 100%;
     height: 100%;
@@ -186,27 +203,27 @@ button:hover{
 .imgbox img{
     position: relative;
     height: 100%;
-    width: calc(130%-80px); /* nav height!*/
+    width: calc(130%-80px);
     top: -100px;
     right: 50px;
-    transform: rotateY(180deg);
-    animation: animateUser 4s linear infinite;
+    animation: animateItem 4s linear infinite;
 }
-@keyframes animateUser {
+@keyframes animateItem {
     50%{
         right: 30px;
         top: -90px;
     }
-}
+} */
 
-.imgbox #cloud{
+/* .imgbox #cloud{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(-35deg);
-    width: 160%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 100%;
     filter: saturate(200%);
-    animation: animate 4s linear infinite;
+    animation: animate 7s linear infinite;
 }
 @keyframes animate {
     50%{
@@ -214,4 +231,4 @@ button:hover{
         left: 50%;
         width: 155%;
     }
-}
+} */
