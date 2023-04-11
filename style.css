@@ -9,7 +9,7 @@ body {
     overflow: hidden;
 }
 html{
-    background: url(img/8135.png)no-repeat center center fixed;
+    background: url(img/8135.png) no-repeat center center fixed;
     background-size: cover;
     scroll-behavior: smooth;
 }
@@ -101,34 +101,34 @@ overflow: hidden;
     height: 350px;
     width: 350px;
     border-radius: 50%;
-    left: -12%;
-    top: 40%;
-    background: linear-gradient(45deg, #5F99B5, #004A67);
-    animation: object1 6s linear infinite
+    left: 4%; 
+    top: 25%;
+    background: linear-gradient(30deg, #004A67, #5F99B5);
+    animation: object1 7s ease-in-out infinite
 }
 .wrapper::after{
     position: absolute;
     content: '';
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    left: 35%;
-    top: 12%;
-    background: linear-gradient(45deg, #C5DCA0, #95B8D1);
-    animation: object2 6s linear infinite
+    left: 80%;
+    top: 20%;
+    background: linear-gradient(10deg, #F9BFB6, #FDEB9E);
+    animation: object2 8s ease-in-out infinite
 }
 @keyframes object1{
     50%{
-        left: -13%;
-        top: 41%;
+        left: 4%;
+        top: 20%;
     }
 }
 @keyframes object2{
     50%{
-        left: 35%;
+        left: 80%;
         top: 10%; 
     }
-} 
+}
 
 .cols{
     width: 50%;
@@ -170,30 +170,32 @@ p{ /* Small descrip text*/
     font-size: 1.2em;
     color: #FDEB9E;
 }
-
+#pst{
+    font-size: 0.7em;
+}
 /* .btns{
     width: 100%;
     position: relative;
     left: 150px;
 } */
 
-/* button{
+button{
     outline: none;
     border: none;
     cursor: pointer;
     font-size: 25px;
     font-weight: 400;
-    color: white;
-    background-color: #E5989B;
+    color: #004A67;
+    background-color: #5F99B5;
     padding: 8px 14px;
-    margin: 40px 5px;
+    margin: 0px 5px;
     letter-spacing: 2px;
     text-transform: capitalize;
-    box-shadow: 0 15px 10px black;
+    /* box-shadow: 0 15px 10px black; */
 }
 button:hover{
     background-color: #AA5D7C;
-} */
+}
 
 /* .imgbox{
     position: relative;
@@ -213,9 +215,9 @@ button:hover{
         right: 30px;
         top: -90px;
     }
-} */
+}
 
-/* .imgbox #cloud{
+.imgbox #cloud{
     position: absolute;
     top: 50%;
     left: 50%;
