@@ -95,7 +95,41 @@ align-items: center;
 padding: 0 10%;
 overflow: hidden;
 }
-.wrapper::before{
+
+#anims .bubble1x{
+    position: absolute;
+    content: '';
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    left: 4%; 
+    top: 25%;
+    background: linear-gradient(30deg, #004A67, #5F99B5);
+    animation: bubble1 7s ease-in-out infinite
+}
+#anims .bubble2x{
+    position: absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    left: 80%;
+    top: 20%;
+    background: linear-gradient(10deg, #F9BFB6, #FDEB9E);
+    animation: bubble2 8s ease-in-out infinite
+}
+#anims .bubble3x{
+    position: absolute;
+    content: '';
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    left: 90%;
+    top: 20%;
+    background: linear-gradient(30deg, #F9BFB6, #FDEB9E);
+    animation: bubble3 8s ease-in-out infinite
+}
+/* .wrapper::before{
     position: absolute;
     content: '';
     height: 350px;
@@ -116,20 +150,25 @@ overflow: hidden;
     top: 20%;
     background: linear-gradient(10deg, #F9BFB6, #FDEB9E);
     animation: object2 8s ease-in-out infinite
-}
-@keyframes object1{
+} */
+@keyframes bubble1{
     50%{
         left: 4%;
         top: 20%;
     }
 }
-@keyframes object2{
+@keyframes bubble2{
     50%{
         left: 80%;
         top: 10%; 
     }
 }
-
+@keyframes bubble3{
+    50%{
+        left: 90%;
+        top: 10%; 
+    }
+}
 .cols{
     width: 50%;
 }
@@ -194,7 +233,7 @@ button{
     /* box-shadow: 0 15px 10px black; */
 }
 button:hover{
-    background-color: #AA5D7C;
+    background-color: #F9BFB6;
 }
 
 /* .imgbox{
