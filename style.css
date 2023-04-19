@@ -89,7 +89,7 @@ b{ /* DOT. */
 .wrapper{
 display: flex;
 width: 100%;
-height: calc(100vh - 80px);
+height:  calc(100vh - 100px);
 justify-content: left;
 align-items: center;
 padding: 0 10%;
@@ -203,8 +203,25 @@ p{ /* Small descrip text*/
     margin: 0px 5px;
     letter-spacing: 2px;
     text-decoration: none;
-    /* box-shadow: 0 15px 10px black; */
 }
 #emailButton:hover{
     background-color: #F9BFB6;
+}
+#imgSource{ /* Image source for background image*/
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    color: #004A67;
+    background-color: #5F99B5;
+    padding: 10px 5px;
+    margin: 0px 0px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    float: right;
+}
+#imgSource:hover{
+    background-color: #F9BFB6;
+    box-shadow: -3px, -30px, black;
 }
